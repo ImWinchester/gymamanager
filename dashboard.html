@@ -1,60 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dashboard</title>
+  <title>GymManager</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
  
-<div class="navbar">
+<div class="sidebar">
   <h2>GymManager</h2>
+  <p>Panel de Control</p>
 </div>
  
-<div class="container">
+<div class="main">
  
-  <div class="cards">
-    <div class="card">
-      <h3>Clientes</h3>
-      <p>25</p>
-    </div>
-    <div class="card">
-      <h3>Asistencia hoy</h3>
-      <p>18</p>
-    </div>
-    <div class="card">
-      <h3>Promedio peso</h3>
-      <p>68 kg</p>
-    </div>
+  <div class="header">
+    <h1>Clientes del gimnasio</h1>
   </div>
  
-  <h2>Progreso de Clientes</h2>
+  <div class="table-container">
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>Membresía</th>
+        <th>Asistencia</th>
+        <th>Edad</th>
+        <th>Esfuerzo</th>
+        <th>Teléfono</th>
+        <th>Objetivo</th>
+      </tr>
  
-  <table>
-    <tr>
-      <th>Nombre</th>
-      <th>Peso</th>
-      <th>Asistencia</th>
-      <th>Estado</th>
-    </tr>
-    <tr>
-      <td>Juan Pérez</td>
-      <td>70 kg</td>
-      <td>5 días</td>
-      <td class="activo">Activo</td>
-    </tr>
-    <tr>
-      <td>Ana López</td>
-      <td>60 kg</td>
-      <td>4 días</td>
-      <td class="activo">Activo</td>
-    </tr>
-    <tr>
-      <td>Carlos Ruiz</td>
-      <td>80 kg</td>
-      <td>2 días</td>
-      <td class="inactivo">Inactivo</td>
-    </tr>
-  </table>
+      <tr>
+        <td>Juan Pérez</td>
+        <td class="activo">Activa</td>
+        <td>85%</td>
+        <td>22</td>
+        <td>Alto</td>
+        <td>6641234567</td>
+        <td>Hipertrofia</td>
+      </tr>
+ 
+      <tr>
+        <td>Ana López</td>
+        <td class="activo">Activa</td>
+        <td>78%</td>
+        <td>19</td>
+        <td>Medio</td>
+        <td>6649876543</td>
+        <td>Resistencia</td>
+      </tr>
+ 
+      <tr>
+        <td>Carlos Ruiz</td>
+        <td class="inactivo">Vencida</td>
+        <td>40%</td>
+        <td>28</td>
+        <td>Bajo</td>
+        <td>6645558899</td>
+        <td>Pérdida de peso</td>
+      </tr>
+ 
+    </table>
+  </div>
  
 </div>
  
