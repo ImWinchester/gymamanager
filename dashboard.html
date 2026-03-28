@@ -1,18 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>GymManager Login</title>
+  <title>Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="login-box">
-    <h2>GymManager</h2>
-    <input type="text" id="user" placeholder="Usuario">
-    <input type="password" id="pass" placeholder="Contraseña">
-    <button onclick="login()">Iniciar Sesión</button>
-    <p id="error"></p>
+ 
+<div class="navbar">
+  <h2>GymManager</h2>
+</div>
+ 
+<div class="container">
+ 
+  <div class="cards">
+    <div class="card">
+      <h3>Clientes</h3>
+      <p>25</p>
+    </div>
+    <div class="card">
+      <h3>Asistencia hoy</h3>
+      <p>18</p>
+    </div>
+    <div class="card">
+      <h3>Promedio peso</h3>
+      <p>68 kg</p>
+    </div>
   </div>
  
-  <script src="script.js"></script>
+  <h2>Progreso de Clientes</h2>
+ 
+  <table>
+    <tr>
+      <th>Nombre</th>
+      <th>Peso</th>
+      <th>Asistencia</th>
+      <th>Estado</th>
+    </tr>
+    <tr>
+      <td>Juan Pérez</td>
+      <td>70 kg</td>
+      <td>5 días</td>
+      <td class="activo">Activo</td>
+    </tr>
+    <tr>
+      <td>Ana López</td>
+      <td>60 kg</td>
+      <td>4 días</td>
+      <td class="activo">Activo</td>
+    </tr>
+    <tr>
+      <td>Carlos Ruiz</td>
+      <td>80 kg</td>
+      <td>2 días</td>
+      <td class="inactivo">Inactivo</td>
+    </tr>
+  </table>
+ 
+</div>
+ 
 </body>
 </html>
